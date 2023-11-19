@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs do HTML</title>
+  </head>
+  <body>
+    <h1>Inputs do HTML</h1>
+    <form action="">
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        required
+        placeholder="Erick Cauã"
+      />
+      <br /><br />
+
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" required />
+      <br /><br />
+
+      <label for="senha">Senha:</label>
+      <input type="password" name="senha" id="senha" />
+      <br /><br />
+
+      <label>Gênero:</label><br />
+      <input type="radio" name="genero" id="masculino" value="M" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="genero" id="feminino" value="F" />
+      <label for="feminino">Feminino</label>
+      <br /><br />
+
+      <label>Interesses:</label><br />
+      <input type="checkbox" name="interesses" id="backend" value="backend" />
+      <label for="backend">Back-end</label>
+      <input type="checkbox" name="interesses" id="frontend" value="frontend" />
+      <label for="backend">Front-end</label>
+      <input type="checkbox" name="interesses" id="mobile" value="mobile" />
+      <label for="backend">Mobile</label>
+      <br /><br />
+
+      <label for="dataDeNascimento">Data de Nascimento</label>
+      <input type="date" name="nascimento" id="dataDeNascimento" />
+      <br /><br />
+
+      <label for="fotoDePerfil">Foto de Perfil</label><br />
+      <input type="file" name="fotoDePerfil" id="fotoDePerfil" /><br /><br />
+
+      <label for="situacao">Situação Atual</label>
+      <select name="situacao" id="situacao">
+        <option value="" disabled selected>Selecione uma das opções...</option>
+        <option value="estudante">
+          Estudando para me tornar um porgramador
+        </option>
+        <option value="estagiario">Atuando como estagiário/trainee</option>
+        <option value="junior">Atuando como desenvolvedor júnior</option>
+        <option value="pleno">Atuando como desenvolvedor pleno</option>
+        <option value="senior">Atuando como desenvolvedor sênior</option>
+      </select>
+      <br /><br />
+
+      <label for="sobre">Sobre Min</label>
+      <textarea
+        name="sobre"
+        id="sobre"
+        cols="30"
+        rows="10"
+        placeholder="Fale um pouco sobre você"
+      ></textarea>
+      <br /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
