@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 5</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Formulário de Inscrição</h1>
     <form action="">
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome">
-        <br><br>
+      <div>
+        <label for="nome">Nome:</label><br />
+        <input type="text" name="nome" id="nome" />
+        <br /><br />
+      </div>
 
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="email">
-        <br><br>
+      <div>
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" />
+        <br /><br />
+      </div>
 
-        <label for="telefone">WhatsApp:</label><br>
-        <input type="tel" name="telefone" id="telefone">
-        <br><br>
+      <div>
+        <label for="telefone">WhatsApp:</label><br />
+        <input type="tel" name="telefone" id="telefone" />
+        <br /><br />
+      </div>
 
-        <label for="atuacao">Área de atuação</label><br>
-        <input type="checkbox" name="desenvolvimento" id="desenvolvimento">
+      <div>
+        <label for="area">Área de atuação</label><br />
+
+        <input type="radio" name="area" id="desenvolvimento" required/>
         <label for="desenvolvimento">Desenvolvimento</label>
 
-        <input type="checkbox" name="QA" id="QA">
+        <input type="radio" name="area" id="QA" required/>
         <label for="QA">Quality Assurance (QA)</label>
 
-        <input type="checkbox" name="dados" id="dados">
+        <input type="radio" name="area" id="dados" required />
         <label for="dados">Análise de Dados</label>
 
-        <input type="checkbox" name="infraestrutura" id="infraestrutura">
+        <input type="radio" name="area" id="infraestrutura" required />
         <label for="infraestrutura">Infraestrutura</label>
-        <br><br>
+        <br /><br />
+      </div>
 
-        <label for="observacoes">Observações</label><br>
-        <textarea name="observacoes" id="observacoes" cols="30" rows="3"></textarea>
-        <br><br>
+      <div>
+        <label for="observacoes">Observações</label><br />
+        <textarea
+          name="observacoes"
+          id="observacoes"
+          cols="30"
+          rows="3"
+        ></textarea>
+        <br /><br />
+      </div>
 
-        <input type="checkbox" name="novidades" id="novidades">
-        <label for="novidades">Desejo receber novidades e ofertas por email.</label>
-        <br><br>
+      <div>
+        <input type="checkbox" name="novidades" id="novidades" />
+        <label for="novidades"
+          >Desejo receber novidades e ofertas por email.</label
+        >
+        <br /><br />
+      </div>
 
-        <button type="submit">Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
-</body>
+  </body>
 </html>
