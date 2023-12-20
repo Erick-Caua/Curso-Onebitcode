@@ -10,10 +10,10 @@ do {
     )
     switch (opcao) {
         case '1':
-            detalhesImoveis.nome = prompt('Nome do proprietário?')
-            detalhesImoveis.quartos = prompt('Quantidade de quartos?')
-            detalhesImoveis.banheiros = prompt('Quantidade de banheiros?')
-            detalhesImoveis.garagem = prompt('Possui garagem?Sim/Não')
+            imovel.nome = prompt('Nome do proprietário?')
+            imovel.quartos = prompt('Quantidade de quartos?')
+            imovel.banheiros = prompt('Quantidade de banheiros?')
+            imovel.garagem = prompt('Possui garagem?Sim/Não')
             const confirma = confirm(
                 "Salvar este imóvel?\n" +
                 "\nProprietário: " + imovel.proprietario +
