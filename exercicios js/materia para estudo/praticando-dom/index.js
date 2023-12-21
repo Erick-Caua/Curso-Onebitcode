@@ -11,6 +11,7 @@ function addContact() {
     const nameInput = document.createElement('input')
     nameInput.type = 'text'
     nameInput.name = 'fullname'
+    
     nameLi.appendChild(nameInput)
     ul.appendChild(nameLi)
     ul.appendChild(document.createElement('br'))
