@@ -68,7 +68,7 @@ function handleBoardClick(ev) {
   // Marca a região clicada com o símbolo do jogador
   if (turnPlayer === 'player1') {
     span.innerText = 'X'
-    vBoard[row][column] = 'X'
+    vBoard[row][column] = 'X' 
   } else {
     span.innerText = 'O'
     vBoard[row][column] = 'O'
