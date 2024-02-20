@@ -26,7 +26,7 @@ function initializeGame() {
 // Verifica se existem três regiões iguais em sequência e devolve as regiões
 function getWinRegions() {
   const winRegions = []
-  if (vBoard[0][0] && vBoard[0][0] === vBoard[0][1] && vBoard[0][0] === vBoard[0][2])
+  if (vBoard[0][0] !== '' && vBoard[0][0] === vBoard[0][1] && vBoard[0][0] === vBoard[0][2])
     winRegions.push("0.0", "0.1", "0.2")
   if (vBoard[1][0] && vBoard[1][0] === vBoard[1][1] && vBoard[1][0] === vBoard[1][2])
     winRegions.push("1.0", "1.1", "1.2")
@@ -68,7 +68,7 @@ function handleBoardClick(ev) {
   // Marca a região clicada com o símbolo do jogador
   if (turnPlayer === 'player1') {
     span.innerText = 'X'
-    vBoard[row][column] = 'X' 
+    vBoard[row][column] = 'X'
   } else {
     span.innerText = 'O'
     vBoard[row][column] = 'O'
@@ -84,6 +84,11 @@ function handleBoardClick(ev) {
     handleWin(winRegions)
   } else if (vBoard.flat().includes('')) {
     turnPlayer = turnPlayer === 'player1' ? 'player2' : 'player1'
+    /* if(turnPlayer === 'player1'){
+         turnPlayer==='player2'
+       }else{
+         turnPlayer==='player1'
+       }*/
     updateTitle()
   } else {
     document.querySelector('h2').innerHTML = 'Empate!'
