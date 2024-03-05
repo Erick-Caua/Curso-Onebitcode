@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" type="module"></script>
+    <title>Document</title>
+    <style>
+        body{
+            width: 700px;
+        }
+        p{
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        .laranja{
+            color:#eb4433 ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tipos de Export no ESM</h1>
+
+    <h2>- Nos ES Modules existem diferentes formas de se realizar o processo de importação e exportação. Eles podem ser
+        divididos da seguinte forma:</h2>
+    <h3>- <strong>Export Nomeado:</strong> o nome da variável/função exportada deve ser o mesmo na hora da importação. A importação é
+        sempre feita com <strong class="laranja">`import { ... } from 'path/to/file'` </strong class="laranja">(com chaves). A exportação pode ser feita
+        de duas formas:</h3>
+    <p>- Inline: na mesma linha da declaração da variável/função, utilizando <strong class="laranja">`export const ...`</strong class="laranja"> ou <strong class="laranja">
+            `export function...`.</strong class="laranja"><br>
+        - Não-inline: após a declaração da variável/função e utilizando <strong class="laranja">`export { ... }`</strong class="laranja"> (com chaves).
+    </p>
+
+    <p>
+        <em>
+            *Obs.: o export nomeado pode ser renomeado para evitar conflitos de nome utilizando o “as” na importação*
+            <strong class="laranja">
+                `import {moduleA as newName } from './moduleA'`
+            </strong class="laranja">
+        </em>
+    </p>
+
+    <h3>
+        - <strong>Export Default:</strong> o nome da variável/função exportada não precisa ser seguido na hora da importação, pode ser usado qualquer nome. A importação é sempre feita com `import ... from 'path/to/file'` (sem chaves). A exportação pode ser feita de duas formas:
+    </h3>
+    <p>
+        - Inline: na mesma linha da declaração da variável/função, utilizando <strong class="laranja">`export default = ...`</strong> ou <strong class="laranja"> `export default function ...`.</strong><br>
+
+        - Não-inline: após a declaração da variável/função e utilizando <strong class="laranja">`export { ... }</strong>` (com chaves).<br>
+        - Uma outra diferença ainda mais importante que a possibilidade de renomear o módulo importado é que **os
+        exports
+        nomeados podem ser usados várias vezes no mesmo arquivo, enquanto o export default é apenas um por arquivo.**
+    </p>
+</body>
+
+</html>
