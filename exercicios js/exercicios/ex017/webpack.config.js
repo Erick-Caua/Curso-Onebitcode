@@ -1,4 +1,12 @@
+const path = require('path')
+
+
 module.exports = {
+    devServer:{
+        static: {
+            diretory: path.resolve(__dirname,'dist')
+        }
+    },
     entry: {
         index: './src/index.js'
 
