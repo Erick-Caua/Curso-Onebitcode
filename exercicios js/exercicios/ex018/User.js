@@ -4,8 +4,8 @@ class User{
         this.email = email
         this.password = password
     }
-    login(){
-        if(this.email == 'erc@gmail.com' && this.password == 'erick'){
+    login(email,password){
+        if(this.email === email && this.password === password){
             console.log('Login Bem sucedido')
         }else{
             console.log('Login errado')
@@ -17,4 +17,4 @@ const caua = new User('Erick Cauã','erc@gmail.com','erick' )
 
 console.log(caua)
 
-caua.login()
+caua.login('erc@gmail.com','erick')
