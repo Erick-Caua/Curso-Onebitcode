@@ -9,6 +9,6 @@ function addInput() {
     newInput.type = 'text' // definindo o tipo do IMPUT
     newInput.name = 'input'
   
-    newLi.appendChild(newInput) // colocano o imput dentro do LI
-    ul.appendChild(newLi) // colocano o Li dentro da UL
+    newLi.appendChild(newInput) // colocando o imput dentro do LI
+    ul.appendChild(newLi) // colocando o Li dentro da UL
   }
