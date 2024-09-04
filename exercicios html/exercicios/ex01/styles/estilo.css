@@ -99,6 +99,11 @@ section {
     margin-right: 7px;
 }
 
+.swiper-slide a{
+    color: #fff;
+    font-weight: bolder;
+}
+
 .swiper-slide--one {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
         url(https://cdn.areademembros.com/files/instancia_1851/editor/xMYJG4Iip3LBjeLEVjgQRtUppH3WZ8GgW9FVHPqa.jpg) no-repeat 50% 50% / cover;
