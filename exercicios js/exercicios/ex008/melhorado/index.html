@@ -10,39 +10,50 @@
 </head>
 
 <body>
-    <h1>Cadastro de Imóveis</h1>
 
-    <h2>Escolha uma opção:</h2>
-    <button id="cadastrar">Cadastrar novo imóvel</button>
-    <button id="listarImoveis">Listar imóveis</button>
+    <main>
+        <div class="card">
+
+            <nav>
+                <h1>Cadastro de Imóveis</h1>
+
+                <button id="cadastrar">Cadastrar novo imóvel</button>
+                <button id="listarImoveis">Listar imóveis</button>
 
 
-<div class="estado">
-    
-        <form class="cadastrarImovel" >
-            <label for="nomeDono">Nome do proprietário?
-                <input type="text" name="nomeDono" id="nomeDono">
-            </label>
-            <label for="qntQuartos">Quantidade de quartos?
-                <input type="number" name="qntQuartos" id="qntQuartos">
-            </label>
-            <label for="qntBanheiros">Quantidade de banheiros?
-                <input type="number" name="qntBanheiros" id="qntBanheiros">
-            </label>
-            <label for="garagem?">Possui garagem?
-                <select name="choice" id="garagem">
-                    <option value="" disabled selected>Opções</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                  </select>
-            </label>
-            <button type="submit" id="formCadastrar">Cadastrar</button>
-        </form>
-</div>
+            </nav>
 
-    <div class="listaImoveis">
-       
-    </div>
+
+            <div class="estado">
+
+                <div class="card-cadastro">
+                    <form class="cadastrarImovel">
+                        <label for="nomeDono">Nome do proprietário?
+                            <input type="text" name="nomeDono" id="nomeDono">
+                        </label>
+                        <label for="qntQuartos">Quantidade de quartos?
+                            <input type="number" name="qntQuartos" id="qntQuartos">
+                        </label>
+                        <label for="qntBanheiros">Quantidade de banheiros?
+                            <input type="number" name="qntBanheiros" id="qntBanheiros">
+                        </label>
+                        <label for="garagem?">Possui garagem?
+                            <select name="choice" id="garagem">
+                                <option value="" disabled selected>Opções</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </label>
+                        <button type="submit" id="formCadastrar">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="listaImoveis">
+
+            </div>
+        </div>
+    </main>
 
 
 
