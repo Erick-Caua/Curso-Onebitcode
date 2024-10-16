@@ -2,7 +2,7 @@ const btncadastrar = document.querySelector("#cadastrar")
 const listar = document.querySelector("#listarImoveis")
 const cadastrar = document.querySelector(".cadastrarImovel")
 const formCadastrar = document.querySelector("#formCadastrar")
-const lista = document.querySelector(".listaImoveis")
+const itensLista = document.querySelector(".listaImoveis")
 const estado = document.querySelector(".estado")
 
 let imoveis = []
@@ -12,30 +12,70 @@ let imoveis = []
 function cadastrarImovel() {
     const imovel = {
         proprietario: cadastrar.nomeDono.value,
-        quartos: cadastrar.qntQuartos.value,
-        banheiros: cadastrar.qntBanheiros.value,
+        quartos: Number(cadastrar.qntQuartos.value),
+        banheiros: Number(cadastrar.qntBanheiros.value),
         garagem: cadastrar.garagem.value
     }
-
-    imoveis.push(imovel)
+    if (imovel.proprietario === "" || imovel.quartos === "" || imovel.banheiros === "" || imovel.garagem === "") {
+        alert("Preencha todos os campos")
+    } else {
+        imoveis.push(imovel)
+    }
 
     console.log(imoveis)
 }
 
+function listarImoveis() {
+
+
+    imoveis.forEach(imovelDiso => {
+        const imovelCompra = document.createElement("p")
+
+        imovelCompra.innerText = `Proprietario: ${imovelDiso.proprietario}
+        Quantidade de quartos: ${imovelDiso.quartos}
+        Quantidade de banheiros: ${imovelDiso.banheiros}
+        Garagem: ${imovelDiso.garagem}\n\n`
+
+        itensLista.appendChild(imovelCompra)
+    })
+
+
+}
+
+function mostrarLista() {
+
+    if (itensLista.style.display = "none") {
+        itensLista.style.display = "block"
+        estado.style.display = "none"
+    }
+}
 
 
 btncadastrar.addEventListener("click", () => {
-    if(estado.style.display ==="none"){
+    if (estado.style.display = "none") {
         estado.style.display = "block"
-    }else{
-        estado.style.display = "none"
+        itensLista.style.display = "none"
+        while (itensLista.firstChild) {
+            itensLista.removeChild(itensLista.firstChild);
+        }
     }
 })
 
+
+
 formCadastrar.addEventListener("click", (e) => {
     e.preventDefault();
-    
+
     cadastrarImovel()
+
+})
+
+
+listar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    mostrarLista()
+    listarImoveis()
 
 })
 
