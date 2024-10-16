@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+
     display: grid;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ main {
 .card {
     width: 600px;
     height: 600px;
-    background-color: brown;
+
     overflow: scroll;
 }
 
@@ -49,7 +49,11 @@ form {
 
 }
 
-.listaImoveis{
+.listaImoveis {
     margin: 50px 50px;
-    
+    column-count: 2;
+    /* Divide o conteúdo em 2 colunas */
+    column-gap: 20px;
+    /* Espaço entre as colunas */
+
 }
