@@ -22,7 +22,6 @@ function cadastrarImovel() {
         imoveis.push(imovel)
     }
 
-    console.log(imoveis)
 }
 
 function listarImoveis() {

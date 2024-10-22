@@ -15,8 +15,8 @@ main {
 .card {
     width: 600px;
     height: 600px;
-
-    overflow: scroll;
+    background: linear-gradient(to top, #00B7E6, #0026E6);
+    border-radius: 20px;
 }
 
 nav {
@@ -24,6 +24,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 5px;
+    margin-bottom: 100PX;
 }
 
 h1 {
@@ -31,10 +32,33 @@ h1 {
     margin-bottom: 5px;
 }
 
+.cadastrarImovel {
+    width: 250px;
+}
+
+#nomeDono {
+    margin-left: 30px;
+    width: 61px;
+}
+
+#qntQuartos {
+    margin-left: 25px;
+    width: 61px;
+}
+
+#qntBanheiros {
+    margin-left: 10px;
+    width: 61px;
+}
+
+#garagem {
+    margin-left: 68px;
+    width: 70px;
+}
+
 .estado {
     display: none;
     height: 400px;
-    padding-top: 100px;
 }
 
 .listaImoveis {
