@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+a:hover{
+    border: 1px solid #F1043A;
+    color: #F1043A;
+    transition: 0.5s;
+}
