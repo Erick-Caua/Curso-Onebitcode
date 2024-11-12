@@ -8,9 +8,10 @@
     background-color: darkgrey;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);/* manipula a quantidade e tamanho das colunas  */
+    grid-template-columns: 1fr 2fr 1fr 1fr;/* manipula a quantidade e tamanho das colunas  */
     gap: 10px 15px;
-    grid-template-rows: minmax(210px, 100%); /* manipula o tamanho minimo e maximo das linhas*/
+    grid-template-rows: minmax(310px,auto);
+    
 }
 
 .item{
