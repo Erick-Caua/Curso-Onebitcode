@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #292929;
+    color: #fff;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.opcoes {
+    display: flex;
+    gap: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "principal extra";
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: principal;
+}
+
+
+.item {
+    width: 280px;
+    padding: 5px;
+    height: 380px;
+    border: 2px solid transparent;
+}
+
+.item:hover {
+    border: 2px solid #292929;
+    border-radius: 10px;
+}
+
+.extra {
+    background-color: #292929;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    min-width: 300px;
+    grid-area: extra;
+    gap: 20px;
+
+    h2 {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+
+    .itemExtra {
+        width: 75%;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .itemExtra:hover {
+        border-color: #fff;
+    }
+}
+
+.mainCardImg {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.sidebarCardImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media(max-width:630px) {
+    section {
+        grid-template-areas:
+            "principal extra"
+            "extra";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+    }
+    .extra{
+        min-width: auto;
+    }
+    footer{
+        font: size 19px; ;
+    }
+}
+
+@media(max-width:463px) {
+    nav{
+        justify-content: center;
+    }
+    footer{
+        justify-content: center;
+    }
+}
