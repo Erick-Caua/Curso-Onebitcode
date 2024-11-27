@@ -308,9 +308,10 @@ footer p a {
         text-align: start;
     }
 
-    #inicio {
+    section#inicio {
         display: flex;
         flex-direction: column;
+        padding: 24px 40px 78px 40px;
 
         .start-inicio {
             width: 60%;
