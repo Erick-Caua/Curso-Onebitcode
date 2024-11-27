@@ -312,7 +312,7 @@ footer p a {
         display: flex;
         flex-direction: column;
         padding: 24px 40px 78px 40px;
-
+        height: auto;
         .start-inicio {
             width: 60%;
         }
