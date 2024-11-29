@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@function color-t($back-color){
+    @if(lightness($back-color)>50){
+        @return black;
+    }@else{
+        @return white;
+    }
+}
+
+@mixin back-color-mixin($color){
+    background-color: $color;
+    color: color-t($color);
+}
+
+.title{
+    height: 100vh;
+    @include back-color-mixin(black);
+
+}
